@@ -117,7 +117,7 @@ workflow trust4_wf {
     String? Docker = "lindax/trust4:v113"
     Int preemptible = 2
     Int maxRetries = 0
-    String memory = "15GB"
+    String memory = "10GB"
     String disks = "local-disk 40 SSD"
     Int cpu = "8"
 
