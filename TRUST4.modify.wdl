@@ -117,8 +117,8 @@ workflow trust4_wf {
     String? Docker = "lindax/trust4:v113"
     Int preemptible = 2
     Int maxRetries = 0
-    String memory = "20GB"
-    String disks = "local-disk 40 SSD"
+    String memory = "10GB"
+    String disks = "local-disk 20 SSD"
     Int cpu = "8"
 
     if (defined(bam)||defined(fq_1)) {
