@@ -118,7 +118,7 @@ workflow trust4_wf {
     Int preemptible = 2
     Int maxRetries = 0
     String memory = "10GB"
-    String disks = "local-disk 40"
+    String disks = "local-disk 40 SSD"
     Int cpu = "8"
 
     if (defined(bam)||defined(fq_1)) {
