@@ -115,10 +115,10 @@ workflow trust4_wf {
     Array[File]? smart_2
     String? barcode_10x
     String? Docker = "lindax/trust4:v113"
-    Int preemptible = 2
+    Int preemptible = 0
     Int maxRetries = 0
     String memory = "10GB"
-    String disks = "local-disk 40 SSD"
+    String disks = "local-disk 50 SSD"
     Int cpu = "8"
 
     if (defined(bam)||defined(fq_1)) {
